@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carolina Rivas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,800;1,900&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/yzh6kvf.css">
+    <link rel="stylesheet" href="slyle.css/style.css">
+    <script src="js/js.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img {
+              width: 1000px;
+              height: auto;
+            }
+        nav{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        ul li{
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            font-size: 3.5em;
+            list-style-type: none;
+            display: inline-block;
+            margin: 0 20px 50px 50px;
+        }
+        body>header{
+            display: flex;
+            flex-direction: column;
+        }
+        .c1{
+            height: 50vh;
+            width: 50vw;
+            margin: 10em 0 0 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px; 
+        }
+        img {
+        }
+        .header {
+            background-color: rgb(31, 28, 28);
+            color: #fff;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .card_img {
+            width: 1200px;
+            height: 900px; /* establece la altura deseada */
+            object-fit: cover; /* asegura que la imagen ocupe todo el contenedor y se recorte si es necesario */
+        }
+        .img-1, .img-2, .img-3{
+            width: 1200px;
+            height: 900px; 
+            object-fit: cover; 
+        }
+        .hgroup>h1{
+            font-family: "Noto Sans", serif;
+            font-weight: 700;
+            font-size: 3.1em;
+            line-height: 60px;
+        }
+        .hgroup>h2{
+            font-family: "Noto Sans", sans-serif;
+            font-size: 2.4em;
+        }
+        .hgroup{
+            margin: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .header>h3{
+            height: 8em;
+            width: 8em;
+            font-size: 6em;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+            padding: 130px;
+            /*display: flex;
+            flex-direction: column;*/
+        }
+        .card_txt {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            justify-content: flex-end;
+        }
+        .card {
+            display: flex;
+            flex-direction: row;
+            padding: 20px 20px;
+            gap: 20px;
+        }
+        .card_txt h1 {
+            font-family: "Playfair Display", serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 3em;
+            padding: 0 20px;
+            color: black;
+            padding: 0 20px;
+
+        }
+        .card_txt h2{
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 1.2em;
+            padding: 0 20px;
+        }
+        .card_txt p {
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 1em;
+            padding: 0 20px;
+        }
+        footer {
+            padding: 150px 150px 150px 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+            height: 750px;
+        }
+        .About {
+            background-color: rgb(31, 28, 28);
+            color: #fff;
+            height: 100vh;
+            width: 100vw;
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: left;
+            align-items: center;
+            margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+            padding-bottom: 3em;
+            gap: 50px;
+        }
+        .About h1{
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5em;
+        }
+        .About p{
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 2em;
+        }
+        .contact {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            justify-content: center;
+        }
+        .cuadrado {
+             width: 100px; 
+             height: 100px; 
+             border: 3px solid #d68f0c;
+        }
+        .cuadrado {
+            position: fixed;
+         /*   z-index: 10%; */
+            top: 0;
+            left: 0;
+            width: 120px;
+            height: 100px;
+            animation-name: cuadrado;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes cuadrado {
+            0% {
+                top: 0;
+                left: 0;
+            }
+            20% {
+                top: 100%;
+                left: 15%;
+            }
+            40% {
+                top: 60%;
+                left: 100%;
+            }
+            60% {
+                top: 0%;
+                left: 60%;
+            }
+            80% {
+                top: 50%;
+                left: 50%;
+            }
+            100% {
+                top:0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="hgroup">
+            <h1>CAROL</h1>
+            <h2>Giménez</h2>
+        </div>
+        <div class="c1">
+           <img src="img/hola_hover (2).gif" alt="" id="hola"></img>
+            </div>
+            <nav>
+                <ul> 
+                    <li><a href="#proyectos">Proyectos</a></li>       
+                    <li><a href="#footer">About</a></li>
+                </ul> 
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+        <div class="card-container">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/img1.jpg" alt="" class="img-1">
+                </figure>
+                <header id="proyectos"class="card_txt">
+                    <h1>Projecto 1</h1>
+                    <h2>Editorial | Triptico | Espai Jove</h2>
+                    <p>Proyecto realizado para Espai Jove</p>
+                </header>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/img2.jpg" alt="" class="img-2">
+                </figure>
+                <header class="card_txt">
+                    <h1>Proyecto 2</h1>
+                    <h2>Publicidad Exterior | Cartel | Película</h2>
+                    <p>Proyecto realizado para la Filmoteca</p>
+                </header>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/img3.jpg" alt="" class="img-3">
+                </figure>
+                <header class="card_txt">
+                    <h1>Proyecto 3</h1>
+                    <h2>Editorial | Revista | Mujeres en el cine y fotografía</h2>
+                    <p>Proyecto realizado para el Departamento de Igualdad</p>
+                </header>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer id="footer" class="About">
+        <h1>About</h1>
+        <p>
+            Maitei! (Hola!) Soy Carol Giménez, paraguaya radicada en España.
+            Y en mi mundo los gatitos luciran muy lindos vestiditos 
+            Usarán sombreros y zapatitos, en mi país de ilusión...
+            Y las flores jugarán conmigo en las campiñas
+            cantarán y charlarán cual niñas, en el mundo de mi propia creación
+            Sin temores viviran los pájaros cantores 
+            y serán más lindos sus colores, en mi país de ilusión
+            Y el riachuelo me podría contar el mundo aquel que siempre he de buscar
+            Quien pudiera algún día vivir las maravillas que soñé feliz
+        </p>
+        <div class="contact">
+        <a href="mailto:karolester@gmail.com">Correo</a>
+        <a href="#">Instagram</a>
+        <a href="#">Behance</a>
+        </div>
+        </footer>
+    </footer>
+</body> 
+</html>
